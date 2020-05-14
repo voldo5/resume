@@ -1,0 +1,298 @@
+/* font-family: 'Exo 2', sans-serif; */
+    /* font-family: 'Playfair Display SC', Georgia, serif; */
+    /* font-family: 'Arima Madurai', cursive; */
+    /* font-family: Roboto, cursive; */
+    /* font-family: Raleway, cursive; */
+    /* Abril+Fatface  Lilita+One */
+    /* font-family: 'Lilita One', cursive; */
+html {
+    box-sizing: border-box;
+}
+body{    
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Josefin Sans', Georgia, sans-serif;    
+    font-size: 1rem;
+    background: #eee;
+    font-weight: normal;
+    color: #54585A ;    
+    margin: 0.2em; 
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+.resume {
+    display: grid;    
+    width : 120mm;    
+    min-width: 28em;
+    margin-top: 0.4em; 
+    margin-bottom: 0.4em;   
+    padding: 3em 3em 3em 4em;
+    grid-template-columns: 10fr;    
+    grid-template-rows   : 92px 0.7fr 4.3fr 0.8fr 0.6fr 4.5fr 0.6fr;    
+    box-shadow           : 0 7px 11px 0 rgba(0, 0, 0, 0.35);
+    grid-gap             : 5px;   
+        grid-template-areas  :
+        "name"        
+        "about"
+        "work"
+        "skills"
+        "education"
+        "development"
+        "hobby";       
+}
+@media (min-width: 900px) {
+.resume {
+    display: grid;    
+    width : 202mm;
+    height: 287mm;
+    min-width: 48em;
+    margin-top: 0.4em; 
+    margin-bottom: 0.4em;   
+    padding: 3em 3em 3em 4em;
+    grid-template-columns: 10fr 9fr;
+    grid-template-rows   : 92px 1fr 6.4fr 1fr 1fr 1.5fr 1fr;    
+    box-shadow           : 0 7px 11px 0 rgba(0, 0, 0, 0.35);
+    grid-gap             : 5px;   
+        grid-template-areas  :
+        "name  name"
+        "about development"
+        "work development"  
+        "work development"                  
+        "skills education"
+        "skills hobby";       
+}
+}
+.grid-area {    
+    padding: 0.4em 1em 0.4em 0em;   
+}
+.name {
+    grid-area: name;
+    background-image: url("panorama4.png");    
+    background-repeat: no-repeat;
+    border-top: 4px solid #d1d0d0;
+    border-bottom: 4px solid #d1d0d0;
+    
+}
+.name1a::before {
+    font-weight: bold;
+    color: #0077AA;
+    content: "Volodym";
+}
+.name2a::before {
+    font-weight: bold;
+    color: #0077AA;
+    content: "Dobrov";
+}
+.name1b::before {
+    font-weight: bold;
+    color: #0077AA;
+    content: "**";
+}
+.name2b::before {
+    font-weight: bold;
+    color: #0077AA;
+    content: "*****";
+    /* text-align: center; */
+    /* padding-top: 1em; 
+    margin-top: 1em;   */
+    /* line-height: 0.4em;  */
+}
+.address-c::before {    
+    content: " Ukraine, Kyiv, *****";
+    text-align: center;
+}
+.phone-c::before {    
+    content: " +380 98-406-****";
+}
+.email-c::before {
+    content: " *****@aol.com";
+}
+.contacts {
+    grid-area: contacts;
+}
+.about {
+    grid-area: about;
+    border: none;
+}
+.work {
+    grid-area: work;
+    border: none;
+}
+.skills {
+    grid-area: skills;
+    border: none;
+}
+.education {
+    grid-area: education;
+    border: none;
+}
+.development {
+    grid-area: development;
+    border: none;
+}
+.hobby {
+    grid-area: hobby;
+    border: none;
+}
+.wrapper {
+    padding        : 0;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-evenly;
+}
+.header3 {
+    font-size: 1.6em;    
+    font-weight: 500;
+    color: #54585A ;    
+    margin-bottom: 0.2em;
+}
+.header4 {   
+    font-size: 1em;   
+    font-weight: 700;
+    color:#0077AA;    
+    margin-bottom: 0.3em;      
+    margin-top: 0.4em; 
+    width: 100%; 
+    border-top: 2px solid #0077AA; 
+    border-bottom: 2px solid #0077AA;
+    padding-bottom: 0.1em; 
+    padding-top: 0.4em;  
+}
+.header4.no-dec {
+    border-top: 0px solid #0077AA; 
+    border-bottom: 0px solid #0077AA;
+    padding-bottom: 0em;    
+    padding-top: 0em; 
+    margin-bottom: 0em;     
+}
+.header5 { 
+    font-weight: 700;
+    color:#0077AA;     
+    text-decoration: underline;
+}
+.right {
+    float: right;
+}
+.person {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    line-height: 1em;   
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    font-family: sans-serif, Georgia, Roboto;    
+    font-weight: 700;
+    font-size: 1.8em;    
+}
+.header3.person, .name1f::before, .name2f::before {
+    border: none;
+    color:#0077AA;    
+}
+.name-container {
+    float: left;    
+    background-color: rgb(238, 238, 238, 0.8);     
+    box-shadow: 0px 0px 16px 16px #eeeeeecc;     
+}
+.contact-container {
+    float: right;
+    padding-top: 0.6em;    
+    background-color: rgb(238, 238, 238, 0.8);
+    box-shadow: 0px 0px 16px 16px #eeeeeecc;
+}
+.contact {
+    padding-left: 1em;
+    padding-right: 0.6em;
+    line-height: 1em;    
+    margin-bottom: 0.26em;
+    margin-top: 0.2em;
+    color:#0077AA;    
+}
+ul {
+    margin: 0.2em 0;    
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    margin: 0.6em 0;
+}
+.fa, .fas, .fab {
+    padding-right: 0.4em;
+    font-size: 0.8em;
+    color: #0077AA;
+}
+.p {
+    padding-bottom: 0.3em; 
+}
+@media print {    
+    body{
+        color: black ; 
+        background: none;
+        font-family: Georgia, Roboto, sans-serif;
+        font-size: 0.9rem;        
+    }
+    .resume {
+        box-shadow : none;       
+        width : 205mm;        
+        height: 267mm;        
+        padding: 2em;  
+        margin-top: 0; 
+        margin-bottom: 0; 
+        grid-template-columns: 12fr 9fr; 
+        grid-template-rows   : 88px 1fr 11fr 1fr 1.5fr 1fr 2fr; 
+        grid-gap             : 5px;    
+        grid-template-areas  :
+        "name  name"
+        "about development"
+        "work development"         
+        "skills development"                    
+        "skills education"
+        "skills hobby"
+        "skills hobb";    
+    }
+    .person {
+        font-family: sans-serif, Roboto;
+        font-weight: 700;
+    }
+    .header4 {
+        color:black; 
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        font-family: sans-serif, Georgia, Roboto;
+    }
+    .header5 {
+        color:black;
+    }
+    .name-container {     
+        box-shadow: none;        
+        padding: 0 0 1em 0;
+        margin:0;
+    }
+    .name {   
+        border: none;       
+    }
+    .name1b::before {
+        font-weight: bold;
+        color: #0077AA;
+        content: "yr";
+    }
+    .name2b::before {
+        font-weight: bold;
+        color: #0077AA;
+        content: "olskyy";
+    }
+    .address-c::before {    
+        content: " Ukraine, Kyiv, 02139";
+    }
+    .phone-c::before {    
+        content: " +380 98-406-5004";
+    }
+    .email-c::before {
+        content: " vvdob@aol.com";
+    }
+    .contact-container {
+        box-shadow: none;        
+        padding-top:0;  
+    }
+    li {
+        margin: 0.2em 0;
+    }
+  }
