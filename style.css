@@ -4,7 +4,7 @@ html {
 body{    
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Josefin Sans', Georgia, sans-serif;  
+    font-family: 'Josefin Sans', sans-serif;  
     font-size: 1rem;
     background: #eee;
     font-weight: normal;
@@ -53,6 +53,9 @@ body{
         "work development"                  
         "skills education"
         "skills hobby";       
+}
+.resume.sans-serif { 
+    grid-template-rows: 92px 1fr 11fr 1fr 1fr 1.5fr 1fr;
 }
 }
 .grid-area {    
@@ -130,7 +133,8 @@ body{
     justify-content: space-evenly;
 }
 .header3 {
-    font-size: 1.6em;    
+    /* font-size: 1.6em;     */
+    font-size: 1.4em; 
     font-weight: 500;
     color: #54585A ;    
     margin-bottom: 0.2em;
@@ -168,7 +172,7 @@ body{
     line-height: 1em;   
     margin-bottom: 0.2em;
     margin-top: 0.2em;
-    font-family: sans-serif, Georgia, Roboto;    
+    font-family: sans-serif;    
     font-weight: 700;
     font-size: 1.8em;    
 }
@@ -214,14 +218,14 @@ li {
 @media print {    
     body{
         color: black ; 
-        background: none;
-        font-family: Georgia, Roboto, sans-serif;
+        background: none;        
+        font-family: Georgia, sans-serif;        
         font-size: 0.9rem;        
     }
     .resume {
         box-shadow : none;       
-        width : 205mm;        
-        height: 267mm;        
+        width : 205mm;
+        height: 250mm;     
         padding: 2em;  
         margin-top: 0; 
         margin-bottom: 0; 
@@ -234,18 +238,21 @@ li {
         "work development"         
         "skills development"                    
         "skills education"
-        "skills hobby"
-        "skills hobb";    
+        "skills hobby";    
     }
+    .resume.sans-serif-p {
+        grid-template-columns: 12fr 10fr; 
+        grid-template-rows   : 88px 1fr 11fr 1fr 1.5fr 1fr;
+    }   
     .person {
-        font-family: sans-serif, Roboto;
+        font-family: sans-serif;
         font-weight: 700;
     }
     .header4 {
         color:black; 
         border-top: 2px solid black; 
         border-bottom: 2px solid black;
-        font-family: sans-serif, Georgia, Roboto;
+        font-family: sans-serif;
     }
     .header5 {
         color:black;
